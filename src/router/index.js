@@ -7,6 +7,8 @@ import LogIn from '../components/signInComponent/LogIn.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    
+    //#region // * SignIn
     {
       path: '/',
       name: 'signin',
@@ -24,11 +26,14 @@ const router = createRouter({
         }
       ]
     },
+    //#endregion
+
     {
       path: '/home',
       name: 'home',
       component: HomeView
     },
+
     {
       path: '/account',
       name: 'account',
@@ -37,6 +42,7 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/AccountView.vue')
     }
+
   ]
 })
 

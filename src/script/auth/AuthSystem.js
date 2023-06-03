@@ -18,21 +18,41 @@ class AuthSystem {
     }
 
 
-    logInToDatabase(username, password){
+    /**
+     * @param {string} username 
+     * @param {string} password 
+     * @returns {object} this function returns the informations of the user (UserID && Username)
+     */
+    async logInToDatabase(username, password){
 
+        return {
+            UID : undefined,
+            username : undefined
+        }
     }
 
 
-    signInToDatabase(email, username, password){
+    /**
+     * @param {string} email 
+     * @param {string} username 
+     * @param {string} password 
+     * @returns {object} this function returns the informations of the user (UserID && Username)
+     */
+    async signInToDatabase(email, username, password){
 
+        return {
+            UID : undefined,
+            username : undefined
+        }
     }
 
 
 }
 
+// ! This is temporary
+let tempDbAdress = undefined, tempDbToken = undefined;
 
-
-const authSystem = new AuthSystem();
+const authSystem = new AuthSystem(tempDbAdress, tempDbToken);
 
 /**
  * Exporting the class as an universal class who will be used everytimes we need that
