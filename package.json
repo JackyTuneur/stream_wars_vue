@@ -7,11 +7,13 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
-    "format": "prettier --write src/"
+    "format": "prettier --write src/",
+    "generate-docs": "./node_modules/.bin/jsdoc ./src/script/*"
   },
   "dependencies": {
-    "animejs": "^3.2.1",
+    "jsdoc": "^4.0.2",
     "pinia": "^2.0.36",
+    "pixi-keyboard": "^1.0.0",
     "pixi.js": "^7.2.4",
     "vue": "^3.3.2",
     "vue-router": "^4.2.0"

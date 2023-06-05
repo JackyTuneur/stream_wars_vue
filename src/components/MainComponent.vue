@@ -1,6 +1,6 @@
 <script>
 
-import CanvasComponent from './CanvasComponent.vue';
+import CanvasComponent from './game/CanvasComponent.vue';
 
 export default{
   components : {
