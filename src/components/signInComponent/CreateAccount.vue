@@ -1,6 +1,5 @@
 <script>
 
-
 import { AuthSystem } from '../../script/auth/AuthSystem';
 
 export default {

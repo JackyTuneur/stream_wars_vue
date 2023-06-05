@@ -1,13 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router'
+
 import HomeView from '../views/HomeView.vue'
 import SignIn from '../views/SignInView.vue'
 import CreateAccount from '../components/signInComponent/CreateAccount.vue'
 import LogIn from '../components/signInComponent/LogIn.vue'
 
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    
+
     //#region // * SignIn
     {
       path: '/',
@@ -29,8 +31,8 @@ const router = createRouter({
     //#endregion
 
     {
-      path: '/home',
-      name: 'home',
+      path: '/main',
+      name: 'main',
       component: HomeView
     },
 
