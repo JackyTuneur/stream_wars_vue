@@ -90,6 +90,7 @@ class Player extends AnimatedSprite{
     }
 
 
+
 }
 
 export default Player;

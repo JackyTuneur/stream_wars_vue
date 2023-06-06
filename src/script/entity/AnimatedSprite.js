@@ -4,6 +4,7 @@ import { Assets } from 'pixi.js';
 
 /**
  * This is the abstract class of many entities
+ * The anchor of every AnimatedSprite is set to 1, 0.5f (in the bottom center of the sprites)
  */
 class AnimatedSprite{
 
@@ -34,11 +35,12 @@ class AnimatedSprite{
         this.animatedSprite = new PIXI.AnimatedSprite(this.animationArray.moove.top);
         this.animatedSprite.animationSpeed = this.animationSpeed
         this.animatedSprite.width = spriteSize; this.animatedSprite.height = spriteSize;
+        this.animatedSprite.anchor.set(1, 0.5);
         this.gameManager.pixiApp.stage.addChild(this.animatedSprite);
         //#endregion
 
         this.gameManager.pixiApp.ticker.add(() => { this.update(this) });
-
+        
     }
 
     /**
