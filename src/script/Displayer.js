@@ -12,8 +12,7 @@ class Displayer{
     constructor(gameManager){
         
         this.gameManager = gameManager;
-
-        this.Player = new Player(this.gameManager, 0, 30);
+        this.Player = new Player(this.gameManager, "player-sprite_sheet", 30);
 
     }
 
