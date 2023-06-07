@@ -1,6 +1,6 @@
-# stream_wars_vue
+# idk_game
 
-Stream Wars is a little progressive web app made with vue.js.
+This is a little game made with vue.js & pixi.js
 
 ## Recommended IDE Setup
 
@@ -23,6 +23,7 @@ npm run dev
 ```
 
 ### Compile and Minify for Production
+(This will add the assets into the build production too)
 
 ```sh
 npm run build

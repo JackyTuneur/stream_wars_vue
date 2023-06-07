@@ -4,13 +4,15 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && mkdir ./dist/src && cp -R ./src/assets ./dist/src/assets",
     "preview": "vite preview",
+    "preview-host": "vite preview --host",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
     "generate-docs": "./node_modules/.bin/jsdoc ./src/script/*"
   },
   "dependencies": {
+    "@pixi/tilemap": "^4.0.0",
     "jsdoc": "^4.0.2",
     "pinia": "^2.0.36",
     "pixi-keyboard": "^1.0.0",

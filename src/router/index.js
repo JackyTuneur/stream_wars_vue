@@ -9,7 +9,6 @@ import LogIn from '../components/signInComponent/LogIn.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-
     //#region // * SignIn
     {
       path: '/',
